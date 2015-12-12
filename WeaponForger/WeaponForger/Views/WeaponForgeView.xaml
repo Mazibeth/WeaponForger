@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:WeaponForger.Controls;assembly=WeaponForger"
+             x:Class="WeaponForger.Views.WeaponForge">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ListView Grid.Column="0" ItemsSource="{Binding Weapon.Materials}" SelectedItem="{Binding SelectedMaterial}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Name}" />
+                            <Label> - </Label>
+                            <Label Text="{Binding Type}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout Grid.Column="1">
+            <Label Text="Schematic" />
+            <controls:BindablePicker ItemsSource="{Binding SchematicLibrary.Schematics}"
+                                     SelectedItem="{Binding SelectedSchematic}" />
+            <Label Text="Technique" />
+            <controls:BindablePicker ItemsSource="{Binding TechniqueLibrary.Techniques}"
+                                     SelectedItem="{Binding SelectedTechnique}" />
+            <Button Text="Reforge Weapon" Command="{Binding ReforgeCommand}" />
+            <Button Text="Forge Weapon" Command="{Binding ForgeCommand}" />
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

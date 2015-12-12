@@ -1,0 +1,17 @@
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\WeaponForger.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\WeaponForger.pdb
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\WeaponForger.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\WeaponForger.pdb
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\SQLite-net.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\bin\Debug\SQLitePCL.raw.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\WeaponForger.csprojResolveAssemblyReference.cache
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\WeaponForgeView.xaml.g.cs
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\MaterialSelectorView.xaml.g.cs
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\MenuView.xaml.g.cs
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\ReforgeSelectView.xaml.g.cs
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\WeaponTestingView.xaml.g.cs
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\TestingSelectView.xaml.g.cs

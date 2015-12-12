@@ -1,0 +1,13 @@
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\WeaponForger.Tests.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\WeaponForger.Tests.pdb
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\WeaponForger.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\WeaponForger.pdb
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\obj\Debug\WeaponForger.Tests.csprojResolveAssemblyReference.cache
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\obj\Debug\WeaponForger.Tests.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\obj\Debug\WeaponForger.Tests.pdb
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\SQLite-net.dll
+C:\Users\fezzi\documents\visual studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\SQLitePCL.raw.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger.Tests\bin\Debug\Xamarin.Forms.Xaml.xml

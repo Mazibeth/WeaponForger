@@ -1,0 +1,36 @@
+This is a small project I've been working on just to express my experience. 
+It's not really meant for anything in particular, and I intentionally tried not to focus too much on one thing.
+This is an ongoing project. Much of it is still incomplete, but as I get a stable build, I will be sure to update here.
+
+I'll highlight here some of the things to look for as you're examining the code, but of course I should have some reasonable comments going on in the code as well.
+
+Things to look for:
+
+XAMARIN - There are a few cross platform app systems out there, but Xamarin I think is one of the more powerful options.
+I've touched on Apache, and I can definitely see pros and cons for either. Given that I wanted to show diversity, however, I went with Xamarin.
+
+C# and XAML - Xamarin uses a modified XAML mark-up, but I'm somewhat proficient with true XAML as well. In fact, I actuall prefer it to Xamarin Forms.
+Along with C# and XAML, I'm also pretty confident in my basic understanding of Javascript and HTML. 
+I'm by no means and expert in any of these languages, but I am learning more every day and I'm also willing to pick up more languages if need be.
+
+UNIT TESTS - You'll find these in the WeaponForger.Tests project. There aren't many currently, as I really only intended to show that I know how to create unit tests.
+I will be expanding on these as they are needed, but for now they just aren't.
+
+CODE GENERATION - You'll notice in the Unit tests I actually have some T4 code generation going on.
+I did this because I wanted to be able to quickly and easily edit my different model libraries.
+I'm a big fan of code generation, and I thought about using it for more, but for now I think this is enough for a proof of competency.
+
+SQLITE DATABASE - So I'm still learning SQL. My experience is very limited when it comes to db management.
+However, as I learn, I implement. This should be able to create a simple database to store objest created between instances of the app.
+I've also worked a little with Entity Framework, but I'm definitely not an expert on database management.
+This is one of my biggest blind spots and I'm working to correct for it.
+
+MVVM - I decided to go with MVVM methodolgy because I wanted to show that I understand how to seperate responsibilities.
+Organized code is essential to being able to navigate and share code effectively.
+I've also worked a little with MVC, but it's been a long time so I would definitely need a refresher.
+Seperating the responsibilities of Model - View - Viewmodel can be a bit tricky, but the pay off is a code base that's easy (and thus cheap) to maintain.
+
+INTERACTIVITY - This is the bulk of the work yet to come. Much of what you see now is just a basic display to make sure everything is working.
+Over time, I really want to make this a more interactive experience.
+That means visually appealing displays, a more visually responsive forge and a bit of colorful animation here and there.
+I don't ever expect this to be an artistic masterpiece, but user interactions are important.

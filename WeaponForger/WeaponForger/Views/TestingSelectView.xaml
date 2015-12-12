@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeaponForger.Views.TestingSelectView">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="6*" />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <ListView ItemsSource="{Binding Weapons}" SelectedItem="{Binding Weapon}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal">
+              <Label>"</Label>
+              <Label Text="{Binding Name}" />
+              <Label>"</Label>
+              <Label> - </Label>
+              <Label Text="{Binding Technique.Name}" />
+              <Label> : </Label>
+              <Label Text="{Binding Schematic.Name}" />
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <Button Grid.Row="1" Text="Test" Command="{Binding TestCommand}" />
+  </Grid>
+</ContentPage>

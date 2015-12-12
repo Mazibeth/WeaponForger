@@ -1,0 +1,16 @@
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\WeaponForgeriOS.exe
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\WeaponForgeriOS.pdb
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\SQLite-net.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\SQLitePCL.raw.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\WeaponForger.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\WeaponForger.pdb
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\SQLite-net.dll.mdb
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.xml
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\bin\iPhone\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\obj\iPhone\Debug\optimized\
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\obj\iPhone\Debug\WeaponForger.iOS.csprojResolveAssemblyReference.cache
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\obj\iPhone\Debug\WeaponForgeriOS.exe
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger.iOS\obj\iPhone\Debug\WeaponForgeriOS.pdb

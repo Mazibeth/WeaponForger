@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeaponForger.Views.WeaponTestingView">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition Height="2*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" HorizontalOptions="Center" Text="{Binding Weapon.Name}"></Label>
+    <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+      <Label>Schematic: </Label>
+      <Label Text="{Binding Weapon.Schematic.Name}"></Label>
+    </StackLayout>
+    <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+      <Label>Technique: </Label>
+      <Label Text="{Binding Weapon.Technique.Name}"></Label>
+    </StackLayout>
+    <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+      <Label>Damage: </Label>
+      <Label Text="{Binding Weapon.Damage}"></Label>
+    </StackLayout>
+    <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+      <Label>Speed: </Label>
+      <Label Text="{Binding Weapon.Speed}"></Label>
+    </StackLayout>
+    <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center">Combo</Label>
+    <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Text="{Binding Combo}"></Label>
+    <Label Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center">Total Damage</Label>
+    <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Text="{Binding TotalDamage}"></Label>
+    <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center" Command="{Binding AttackCommand}" Text="Attack!"></Button>
+  </Grid>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<#@ template language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WeaponForger.Models;
+
+namespace WeaponForger.Data
+{
+    public class SchematicLibrary
+    {
+        public SchematicLibrary()
+        {
+            Schematics = new List<Schematic>();
+
+<#foreach(var Schematic in Schematics) { #>
+            var <#=Regex.Replace(Schematic.Name, @"\s+", "")#>Schematic = new Schematic
+            {
+                Id = <#=Schematic.Id#>,
+                Name = "<#=Schematic.Name#>",
+                Slot = new char[]
+                {
+					'<#=Schematic.Slot[0]#>','<#=Schematic.Slot[1]#>','<#=Schematic.Slot[2]#>','<#=Schematic.Slot[3]#>','<#=Schematic.Slot[4]#>', 
+                    '<#=Schematic.Slot[5]#>','<#=Schematic.Slot[6]#>','<#=Schematic.Slot[7]#>','<#=Schematic.Slot[8]#>','<#=Schematic.Slot[9]#>', 
+                    '<#=Schematic.Slot[10]#>','<#=Schematic.Slot[11]#>','<#=Schematic.Slot[12]#>','<#=Schematic.Slot[13]#>','<#=Schematic.Slot[14]#>', 
+                    '<#=Schematic.Slot[15]#>','<#=Schematic.Slot[16]#>','<#=Schematic.Slot[17]#>','<#=Schematic.Slot[18]#>','<#=Schematic.Slot[19]#>', 
+                    '<#=Schematic.Slot[20]#>','<#=Schematic.Slot[21]#>','<#=Schematic.Slot[22]#>','<#=Schematic.Slot[23]#>','<#=Schematic.Slot[24]#>'
+                }
+            };
+            Schematics.Add(<#=Regex.Replace(Schematic.Name, @"\s+", "")#>Schematic);
+<#}#>
+        }
+
+        public List<Schematic> Schematics { get; set; } 
+    }
+}

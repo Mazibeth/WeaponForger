@@ -1,0 +1,7 @@
+Id,Technique,Primary,Secondary,Tertiary
+1,Cast,Metal,Wood,Gem
+2,Fold,Metal,Cloth,Wood
+3,Grind,Gem,Metal,Cloth
+4,Wrap,Gem,Leather,Wood
+5,Carve,Wood,Leather,Gem
+6,Warp,Wood,Cloth,Leather
