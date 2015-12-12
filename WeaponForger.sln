@@ -274,25 +274,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://autobahntolearning.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = WeaponForger\\WeaponForger.Droid\\WeaponForger.Droid.csproj
-		SccProjectName1 = WeaponForger/WeaponForger.Droid
-		SccLocalPath1 = WeaponForger\\WeaponForger.Droid
-		SccProjectUniqueName2 = WeaponForger\\WeaponForger.iOS\\WeaponForger.iOS.csproj
-		SccProjectName2 = WeaponForger/WeaponForger.iOS
-		SccLocalPath2 = WeaponForger\\WeaponForger.iOS
-		SccProjectUniqueName3 = WeaponForger\\WeaponForger.WinPhone\\WeaponForger.WinPhone.csproj
-		SccProjectName3 = WeaponForger/WeaponForger.WinPhone
-		SccLocalPath3 = WeaponForger\\WeaponForger.WinPhone
-		SccProjectUniqueName4 = WeaponForger\\WeaponForger\\WeaponForger.csproj
-		SccProjectName4 = WeaponForger/WeaponForger
-		SccLocalPath4 = WeaponForger\\WeaponForger
-		SccProjectUniqueName5 = WeaponForger.Tests\\WeaponForger.Tests.csproj
-		SccProjectName5 = WeaponForger.Tests
-		SccLocalPath5 = WeaponForger.Tests
-	EndGlobalSection
 EndGlobal

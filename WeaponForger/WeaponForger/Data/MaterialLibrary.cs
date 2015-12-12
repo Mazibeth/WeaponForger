@@ -1,9 +1,10 @@
+// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 11/27/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
 
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using WeaponForger.Enums;
 using WeaponForger.Models;
 
@@ -11,6 +12,9 @@ namespace WeaponForger.Data
 {
     public class MaterialLibrary
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MaterialLibrary"/> class.
+        /// </summary>
         public MaterialLibrary()
         {
             MaterialsList = new List<Material>();
@@ -407,6 +411,12 @@ namespace WeaponForger.Data
             MaterialsList.Add(BovineMaterial);
         }
 
-        public List<Material> MaterialsList { get; set; } 
+        /// <summary>
+        /// Gets or sets the materials list.
+        /// </summary>
+        /// <value>
+        /// The materials list.
+        /// </value>
+        public List<Material> MaterialsList { get; set; }
     }
 }

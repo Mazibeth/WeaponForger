@@ -1,4 +1,10 @@
-﻿using System;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 12/08/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using WeaponForger.Models;
 
@@ -6,14 +12,41 @@ namespace WeaponForger.Toolbox
 {
     public class NameGenerator
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NameGenerator"/> class.
+        /// </summary>
+        /// <param name="weapon">The weapon.</param>
         public NameGenerator(Weapon weapon)
         {
             Weapon = weapon;
         }
 
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the weapon.
+        /// </summary>
+        /// <value>
+        /// The weapon.
+        /// </value>
         public Weapon Weapon { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name { get; set; }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Generates this instance.
+        /// </summary>
+        /// <returns></returns>
         public string Generate()
         {
             if (Weapon == null)
@@ -26,6 +59,10 @@ namespace WeaponForger.Toolbox
             return Name;
         }
 
+        /// <summary>
+        /// Generates the name of the speed.
+        /// </summary>
+        /// <returns></returns>
         private string GenerateSpeedName()
         {
             var FastList = new List<string>
@@ -76,6 +113,10 @@ namespace WeaponForger.Toolbox
             return FastList[Random.Next(0, FastList.Count - 1)];
         }
 
+        /// <summary>
+        /// Generates the name of the damage.
+        /// </summary>
+        /// <returns></returns>
         private string GenerateDamageName()
         {
             var HighList = new List<string>
@@ -122,5 +163,8 @@ namespace WeaponForger.Toolbox
             }
             return LowList[Random.Next(0, LowList.Count - 1)];
         }
+
+        #endregion
+
     }
 }

@@ -1,4 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 10/30/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WeaponForger.Models;
 
 namespace WeaponForger.Tests

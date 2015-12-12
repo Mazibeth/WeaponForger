@@ -1,4 +1,10 @@
-﻿using System.IO;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 10/31/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using System.IO;
 using Windows.Storage;
 using SQLite;
 using WeaponForger.Interfaces;

@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 12/11/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using System;
 using System.ComponentModel;
-using System.Dynamic;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 using WeaponForger.Annotations;
 using WeaponForger.Models;
 using Xamarin.Forms;
@@ -14,9 +15,11 @@ namespace WeaponForger.ViewModels
 {
     public class WeaponTestingViewModel : INotifyPropertyChanged
     {
-        private string _combo;
-        private double _totalDamage;
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="WeaponTestingViewModel"/> class.
+        /// </summary>
+        /// <param name="navigation">The navigation.</param>
+        /// <param name="weapon">The weapon.</param>
         public WeaponTestingViewModel(INavigation navigation, Weapon weapon)
         {
             Navigation = navigation;
@@ -25,6 +28,15 @@ namespace WeaponForger.ViewModels
             AttackCommand = new Command(Attack);
         }
 
+        #region Fields
+
+        private string _combo;
+        private double _totalDamage;
+
+        #endregion
+
+        #region Properties
+
         public Command AttackCommand { get; set; }
 
         public string Combo
@@ -32,7 +44,7 @@ namespace WeaponForger.ViewModels
             get { return _combo; }
             set
             {
-                _combo = value; 
+                _combo = value;
                 OnPropertyChanged("Combo");
             }
         }
@@ -42,13 +54,18 @@ namespace WeaponForger.ViewModels
             get { return _totalDamage; }
             set
             {
-                _totalDamage = value; 
+                _totalDamage = value;
                 OnPropertyChanged("TotalDamage");
             }
         }
 
         public Weapon Weapon { get; set; }
         public INavigation Navigation { get; set; }
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        #endregion
+
+        #region Methods
 
         private void Attack()
         {
@@ -57,9 +74,10 @@ namespace WeaponForger.ViewModels
             Combo = string.Empty;
             TotalDamage = 0;
 
-            for (int i = 0; i < (Weapon.Speed / 1); i++)
+            for (var i = 0; i < (Weapon.Speed / 1); i++)
             {
-                var damage = Weapon.Damage + rand.Next(10); ;
+                var damage = Weapon.Damage + rand.Next(10);
+                ;
 
                 if (i != 0)
                 {
@@ -71,12 +89,13 @@ namespace WeaponForger.ViewModels
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        #endregion
+
     }
 }

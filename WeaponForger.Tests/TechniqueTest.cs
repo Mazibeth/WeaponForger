@@ -1,8 +1,11 @@
-﻿using System.Diagnostics;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 11/25/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
 using System.IO;
-using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WeaponForger.Data;
 using WeaponForger.Tests.Tools;
 
 namespace WeaponForger.Tests

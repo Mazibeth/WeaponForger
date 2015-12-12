@@ -1,4 +1,10 @@
-﻿using Foundation;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 09/14/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;

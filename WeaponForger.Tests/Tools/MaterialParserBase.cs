@@ -1,4 +1,10 @@
-﻿using System;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 11/23/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

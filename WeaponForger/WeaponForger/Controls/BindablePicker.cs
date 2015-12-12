@@ -1,4 +1,13 @@
-﻿using System;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 12/04/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+// This is a custom xamarin control. The native picker control does not allow binding to a collection.
+// Because I needed this functionality, I had to create my own control that could in fact be bound to.
+
+using System;
 using System.Collections;
 using System.Collections.Specialized;
 using System.Linq;

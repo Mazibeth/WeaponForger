@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 12/04/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using System.Collections;
 
 namespace WeaponForger.Extensions
 {

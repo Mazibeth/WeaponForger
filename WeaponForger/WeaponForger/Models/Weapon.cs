@@ -1,4 +1,13 @@
-﻿using System;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 09/14/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+// Many of the object stored in a weapon must be ignored by the SQL database.
+// To avoid having to structure a one-to-many relationship, I created a simple worker around. 
+
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using SQLite;
@@ -8,15 +17,9 @@ namespace WeaponForger.Models
 {
     public class Weapon : INotifyPropertyChanged
     {
-        private double _damage;
-        private string _materialIds;
-        private string _name;
-        private Schematic _schematic;
-        private int _schematicId;
-        private double _speed;
-        private Technique _technique;
-        private int _techniqueId;
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Weapon"/> class.
+        /// </summary>
         public Weapon()
         {
             Id = null;
@@ -26,9 +29,36 @@ namespace WeaponForger.Models
             Technique = new Technique();
         }
 
+        #region Fields
+
+        private double _damage;
+        private string _materialIds;
+        private string _name;
+        private Schematic _schematic;
+        private int _schematicId;
+        private double _speed;
+        private Technique _technique;
+        private int _techniqueId;
+
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>
+        /// The identifier.
+        /// </value>
         [PrimaryKey]
         public int? Id { get; set; }
 
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>
+        /// The name.
+        /// </value>
         public string Name
         {
             get { return _name; }
@@ -39,6 +69,12 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Gets or sets the speed.
+        /// </summary>
+        /// <value>
+        /// The speed.
+        /// </value>
         public double Speed
         {
             get { return _speed; }
@@ -49,6 +85,12 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Gets or sets the damage.
+        /// </summary>
+        /// <value>
+        /// The damage.
+        /// </value>
         public double Damage
         {
             get { return _damage; }
@@ -59,9 +101,21 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Gets or sets the materials.
+        /// </summary>
+        /// <value>
+        /// The materials.
+        /// </value>
         [Ignore]
         public ObservableCollection<Material> Materials { get; set; }
 
+        /// <summary>
+        /// Gets or sets the material ids.
+        /// </summary>
+        /// <value>
+        /// The material ids.
+        /// </value>
         public string MaterialIds
         {
             get { return _materialIds; }
@@ -72,6 +126,12 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Gets or sets the technique identifier.
+        /// </summary>
+        /// <value>
+        /// The technique identifier.
+        /// </value>
         public int TechniqueId
         {
             get { return _techniqueId; }
@@ -82,6 +142,12 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Gets or sets the schematic identifier.
+        /// </summary>
+        /// <value>
+        /// The schematic identifier.
+        /// </value>
         public int SchematicId
         {
             get { return _schematicId; }
@@ -92,6 +158,12 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Gets or sets the schematic.
+        /// </summary>
+        /// <value>
+        /// The schematic.
+        /// </value>
         [Ignore]
         public Schematic Schematic
         {
@@ -104,6 +176,12 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Gets or sets the technique.
+        /// </summary>
+        /// <value>
+        /// The technique.
+        /// </value>
         [Ignore]
         public Technique Technique
         {
@@ -116,8 +194,18 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Occurs when [property changed].
+        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Generates the weapon.
+        /// </summary>
         public void GenerateWeapon()
         {
             var gen = new NameGenerator(this);
@@ -152,6 +240,10 @@ namespace WeaponForger.Models
             }
         }
 
+        /// <summary>
+        /// Called when [property changed].
+        /// </summary>
+        /// <param name="name">The name.</param>
         protected void OnPropertyChanged(string name)
         {
             var handler = PropertyChanged;
@@ -160,5 +252,8 @@ namespace WeaponForger.Models
                 handler(this, new PropertyChangedEventArgs(name));
             }
         }
+
+        #endregion
+
     }
 }

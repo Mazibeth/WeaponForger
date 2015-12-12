@@ -1,4 +1,10 @@
-﻿using System;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 12/02/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using System;
 using System.Diagnostics;
 using System.Linq;
 using WeaponForger.Data;
@@ -10,6 +16,10 @@ namespace WeaponForger.ViewModels
 {
     public class WeaponForgeViewModel
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="WeaponForgeViewModel"/> class.
+        /// </summary>
+        /// <param name="navigation">The navigation.</param>
         public WeaponForgeViewModel(INavigation navigation)
         {
             Navigation = navigation;
@@ -19,7 +29,7 @@ namespace WeaponForger.ViewModels
             TechniqueLibrary = new TechniqueLibrary();
             SchematicLibrary = new SchematicLibrary();
             MaterialLibrary = new MaterialLibrary();
-            
+
             MaterialTappedCommand = new Command(MaterialTapped);
             ReforgeCommand = new Command(Reforge);
             ForgeCommand = new Command(ForgeWeapon);
@@ -52,6 +62,11 @@ namespace WeaponForger.ViewModels
             #endregion
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="WeaponForgeViewModel"/> class.
+        /// </summary>
+        /// <param name="navigation">The navigation.</param>
+        /// <param name="weapon">The weapon.</param>
         public WeaponForgeViewModel(INavigation navigation, Weapon weapon)
         {
             Navigation = navigation;
@@ -71,18 +86,86 @@ namespace WeaponForger.ViewModels
             SelectedSchematic = SchematicLibrary.Schematics.First(x => x.Name == Weapon.Schematic.Name);
         }
 
-        public Command MaterialTappedCommand { get; private set; }
-        public Command ReforgeCommand { get; }
-        public Command ForgeCommand { get; }
-        public Weapon Weapon { get; set; }
-        public WeaponForgerDatabase DBContext { get; set; }
-        public MaterialLibrary MaterialLibrary { get; set; }
-        public SchematicLibrary SchematicLibrary { get; set; }
-        public TechniqueLibrary TechniqueLibrary { get; set; }
+        #region Fields
+
         private Schematic _selectedSchematic { get; set; }
         private Technique _selectedTechnique { get; set; }
         private Material _selectedMaterial { get; set; }
 
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// Gets the material tapped command.
+        /// </summary>
+        /// <value>
+        /// The material tapped command.
+        /// </value>
+        public Command MaterialTappedCommand { get; private set; }
+
+        /// <summary>
+        /// Gets the reforge command.
+        /// </summary>
+        /// <value>
+        /// The reforge command.
+        /// </value>
+        public Command ReforgeCommand { get; }
+
+        /// <summary>
+        /// Gets the forge command.
+        /// </summary>
+        /// <value>
+        /// The forge command.
+        /// </value>
+        public Command ForgeCommand { get; }
+
+        /// <summary>
+        /// Gets or sets the weapon.
+        /// </summary>
+        /// <value>
+        /// The weapon.
+        /// </value>
+        public Weapon Weapon { get; set; }
+
+        /// <summary>
+        /// Gets or sets the database context.
+        /// </summary>
+        /// <value>
+        /// The database context.
+        /// </value>
+        public WeaponForgerDatabase DBContext { get; set; }
+
+        /// <summary>
+        /// Gets or sets the material library.
+        /// </summary>
+        /// <value>
+        /// The material library.
+        /// </value>
+        public MaterialLibrary MaterialLibrary { get; set; }
+
+        /// <summary>
+        /// Gets or sets the schematic library.
+        /// </summary>
+        /// <value>
+        /// The schematic library.
+        /// </value>
+        public SchematicLibrary SchematicLibrary { get; set; }
+
+        /// <summary>
+        /// Gets or sets the technique library.
+        /// </summary>
+        /// <value>
+        /// The technique library.
+        /// </value>
+        public TechniqueLibrary TechniqueLibrary { get; set; }
+
+        /// <summary>
+        /// Gets or sets the selected material.
+        /// </summary>
+        /// <value>
+        /// The selected material.
+        /// </value>
         public Material SelectedMaterial
         {
             get { return _selectedMaterial; }
@@ -96,6 +179,12 @@ namespace WeaponForger.ViewModels
             }
         }
 
+        /// <summary>
+        /// Gets or sets the selected schematic.
+        /// </summary>
+        /// <value>
+        /// The selected schematic.
+        /// </value>
         public Schematic SelectedSchematic
         {
             get { return _selectedSchematic; }
@@ -115,6 +204,12 @@ namespace WeaponForger.ViewModels
             }
         }
 
+        /// <summary>
+        /// Gets or sets the selected technique.
+        /// </summary>
+        /// <value>
+        /// The selected technique.
+        /// </value>
         public Technique SelectedTechnique
         {
             get { return _selectedTechnique; }
@@ -134,8 +229,21 @@ namespace WeaponForger.ViewModels
             }
         }
 
+        /// <summary>
+        /// Gets or sets the navigation.
+        /// </summary>
+        /// <value>
+        /// The navigation.
+        /// </value>
         public INavigation Navigation { get; set; }
 
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// Reforges this instance.
+        /// </summary>
         private void Reforge()
         {
             if (SelectedSchematic == null || SelectedTechnique == null)
@@ -165,6 +273,10 @@ namespace WeaponForger.ViewModels
             }
         }
 
+        /// <summary>
+        /// Forges the enabled.
+        /// </summary>
+        /// <returns></returns>
         private bool ForgeEnabled()
         {
             if (Weapon.Materials.Any(material => material.Name == "Empty"))
@@ -174,11 +286,17 @@ namespace WeaponForger.ViewModels
             return DBContext != null && SelectedTechnique != null && SelectedSchematic != null;
         }
 
+        /// <summary>
+        /// Materials the tapped.
+        /// </summary>
         private async void MaterialTapped()
         {
             await Navigation.PushAsync(new MaterialSelectorView(Weapon, SelectedMaterial));
         }
 
+        /// <summary>
+        /// Forges the weapon.
+        /// </summary>
         private async void ForgeWeapon()
         {
             try
@@ -205,5 +323,8 @@ namespace WeaponForger.ViewModels
                 throw;
             }
         }
+
+        #endregion
+
     }
 }

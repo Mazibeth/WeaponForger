@@ -1,4 +1,10 @@
-﻿using UIKit;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 09/14/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using UIKit;
 
 namespace WeaponForger.iOS
 {

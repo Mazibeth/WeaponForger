@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 12/11/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
 using WeaponForger.ViewModels;
 using Xamarin.Forms;
 

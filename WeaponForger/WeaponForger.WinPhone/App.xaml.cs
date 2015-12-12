@@ -1,4 +1,10 @@
-﻿using System;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 09/14/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using System;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Markup;

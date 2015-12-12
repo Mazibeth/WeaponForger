@@ -1,4 +1,10 @@
-﻿using Android.App;
+﻿// ///////////////////////////////
+// // Author: Derick Rhodes     //
+// // Creation Date: 09/14/2015 //
+// // Last Updated: 12/12/2015  //
+// ///////////////////////////////
+
+using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Xamarin.Forms;
