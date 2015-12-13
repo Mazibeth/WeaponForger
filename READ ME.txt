@@ -7,9 +7,9 @@ I'll highlight here some of the things to look for as you're examining the code,
 Things to look for:
 
 XAMARIN - There are a few cross platform app systems out there, but Xamarin I think is one of the more powerful options.
-I've touched on Apache, and I can definitely see pros and cons for either. Given that I wanted to show diversity, however, I went with Xamarin.
+I've touched on Apache Cordova, and I can definitely see pros and cons for either. Given that I wanted to show diversity, however, I went with Xamarin.
 
-C# and XAML - Xamarin uses a modified XAML mark-up, but I'm somewhat proficient with true XAML as well. In fact, I actuall prefer it to Xamarin Forms.
+C# and XAML - Xamarin uses a modified XAML mark-up, but I'm somewhat proficient with true XAML as well. In fact, I actually prefer it to Xamarin Forms.
 Along with C# and XAML, I'm also pretty confident in my basic understanding of Javascript and HTML. 
 I'm by no means and expert in any of these languages, but I am learning more every day and I'm also willing to pick up more languages if need be.
 
