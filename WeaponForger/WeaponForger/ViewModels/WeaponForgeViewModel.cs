@@ -314,7 +314,7 @@ namespace WeaponForger.ViewModels
                     }
                     Weapon.GenerateWeapon();
                     DBContext.Database.InsertOrReplace(Weapon);
-                    await Navigation.PopToRootAsync();
+                    await Navigation.PushAsync(new ForgedView(Weapon));
                 }
             }
             catch (Exception e)

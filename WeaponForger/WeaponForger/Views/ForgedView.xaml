@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeaponForger.Views.ForgedView">
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition Height="2*"></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
+    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="24" HorizontalOptions="Center" Text="SUCCESS!"></Label>
+    <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="Center" Orientation="Horizontal">
+      <Label Text="You crafted a "></Label>
+      <Label Text="{Binding Weapon.Name}"></Label>
+      <Label Text="!"></Label>
+    </StackLayout>
+    <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center">
+      <Label Text="Damage"></Label>
+      <Label Text="{Binding Weapon.Damage}"></Label>
+    </StackLayout>
+    <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
+      <Label Text="Speed"></Label>
+      <Label Text="{Binding Weapon.Speed}"></Label>
+    </StackLayout>
+    <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Your weapon was saved, be sure to test it out!"></Label>
+    <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Command="{Binding ReturnCommand}" Text="Main Menu"></Button>
+  </Grid>
+</ContentPage>

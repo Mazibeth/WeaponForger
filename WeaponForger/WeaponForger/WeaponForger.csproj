@@ -58,12 +58,16 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Toolbox\NameGenerator.cs" />
+    <Compile Include="ViewModels\ForgedViewModel.cs" />
     <Compile Include="ViewModels\MaterialSelectorViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
     <Compile Include="ViewModels\ReforgeSelectViewModel.cs" />
     <Compile Include="ViewModels\TestingSelectViewModel.cs" />
     <Compile Include="ViewModels\WeaponForgeViewModel.cs" />
     <Compile Include="ViewModels\WeaponTestingViewModel.cs" />
+    <Compile Include="Views\ForgedView.xaml.cs">
+      <DependentUpon>ForgedView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MaterialSelectorView.xaml.cs">
       <DependentUpon>MaterialSelectorView.xaml</DependentUpon>
     </Compile>
@@ -136,6 +140,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\TestingSelectView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ForgedView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -211,6 +211,8 @@ namespace WeaponForger.Models
             var gen = new NameGenerator(this);
             Name = gen.Generate();
 
+            var materialIds = "";
+
             Damage = 0;
             Speed = 0;
 
@@ -224,7 +226,7 @@ namespace WeaponForger.Models
                 Speed += material.Hardness;
                 Speed -= material.Weight;
 
-                MaterialIds += material.Id + ",";
+                materialIds += material.Id + ",";
             }
 
             Damage = Math.Round(Damage / Materials.Count, 1);
@@ -238,6 +240,8 @@ namespace WeaponForger.Models
             {
                 Speed = 1;
             }
+
+            MaterialIds = materialIds;
         }
 
         /// <summary>

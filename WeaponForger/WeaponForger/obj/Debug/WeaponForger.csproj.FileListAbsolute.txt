@@ -15,3 +15,4 @@ C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\W
 C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\ReforgeSelectView.xaml.g.cs
 C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\WeaponTestingView.xaml.g.cs
 C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\TestingSelectView.xaml.g.cs
+C:\Users\fezzi\Documents\Visual Studio 2015\Projects\WeaponForger\WeaponForger\WeaponForger\obj\Debug\ForgedView.xaml.g.cs
